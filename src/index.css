@@ -5,24 +5,42 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #d3d3d3;
+  background-color: #1a1a1a;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-.col-sm-10{
+.col-sm-12{
   background-color: rgb(233, 233, 233);
+  z-index: 10;
+  
 }
-.col-sm-2{
-  background-color: rgb(138, 52, 52);
+.img-fluid{
+  filter: grayscale(100%);
+  opacity: 0.9;
 }
-
+.display-4{
+  color: rgb(255, 255, 255);
+}
+.col-sm-1{
+  background-color: rgb(134, 40, 40);
+  background-color: rgba(39, 39, 39, 0);
+  border-radius: 0px 0px;
+}
+.bar{
+  background-color: rgb(39, 39, 39);
+  height: 0.5rem;
+  margin: 0%;
+}
 .jumbotron{
   margin: 0px;
-  background-color: rgb(134, 40, 40);
-  color: white;
+  background-color: rgb(39, 39, 39);
+  color: rgb(235, 235, 235);
+  border-radius: 0px 0px;
+  z-index: 10;
+  
 }
 #str1{
   display: none;
