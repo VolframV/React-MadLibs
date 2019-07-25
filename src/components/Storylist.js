@@ -3,7 +3,7 @@ import InputPage from './InputPage';
 import bnrimg2 from '../img/img5.jpg'
 import bnrimg1 from '../img/img6.jpg'
 
-//// THIS CLASS SIMPLY HOLD aLL OF THE STORY NAMES AND ITS STORY LOCATION AND SEND IT TO THE NAVBAR
+
 
 export default class Storylist extends Component {
 
