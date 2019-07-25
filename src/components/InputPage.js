@@ -32,10 +32,6 @@ export default class InputPage extends Component {
     gsVisable() {
         var str1Dom = document.getElementById('str1');
         str1Dom.style.display = 'block';
-        if (str1Dom.style.display == 'block') {
-            str1Dom = 'none';
-        }
-
     }
 
 
@@ -44,8 +40,6 @@ export default class InputPage extends Component {
         return (
             <div >
                 <br />
-                <h2>COMEDY</h2>
-                <hr />
                 <div class="alert alert-primary" role="alert">
                     Please input the 'Nouns' and 'Synonyms', once you're done click "Next".
 </div>
