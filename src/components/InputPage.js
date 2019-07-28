@@ -1,6 +1,13 @@
 import React, { Component } from 'react'
 import GeneratedStory from './GeneratedStory';
 
+
+/// BREAK THIS INTO MORE COMPONETS 
+//
+//
+//
+//
+
 export default class InputPage extends Component {
     constructor(props) {
         super(props);
@@ -38,106 +45,109 @@ export default class InputPage extends Component {
     render() {
         var storyName = this.props.storyName;
         return (
-            <div >
-                <br />
-                <div class="alert alert-primary" role="alert">
-                    Please input the 'Nouns' and 'Synonyms', once you're done click "Next".
-</div>
-                <br /><form>
-                    <div className="row">
-
-                        <div className="col-sm-6">
-                            <div className="input-group mb-3">
-                                <div className="input-group-prepend">
-                                    <span className="input-group-text" id="inputGroup-sizing-default">Noun: </span>
-                                </div>
-                                <input
-                                    type="text"
-                                    name="noun1"
-                                    className="form-control"
-                                    value={this.noun1}
-                                    onChange={this.handleInputChange} />
-
-                            </div>
-                        </div>
-                        <div className="col-sm-6">
-                            <div className="input-group mb-3">
-                                <div className="input-group-prepend">
-                                    <span className="input-group-text" id="inputGroup-sizing-default">Synonym: </span>
-                                </div>
-                                <input
-                                    type="text"
-                                    name="syn1"
-                                    className="form-control"
-                                    value={this.syn1}
-                                    onChange={this.handleInputChange} />
-                            </div>
-                        </div>
-                        <div className="col-sm-6">
-                            <div className="input-group mb-3">
-                                <div className="input-group-prepend">
-                                    <span className="input-group-text" id="inputGroup-sizing-default">Noun: </span>
-                                </div>
-                                <input
-                                    type="text"
-                                    name="noun2"
-                                    className="form-control"
-                                    value={this.noun2}
-                                    onChange={this.handleInputChange} />
-
-                            </div>
-                        </div>
-                        <div className="col-sm-6">
-                            <div className="input-group mb-3">
-                                <div className="input-group-prepend">
-                                    <span className="input-group-text" id="inputGroup-sizing-default">Synonym: </span>
-                                </div>
-                                <input
-                                    type="text"
-                                    name="syn2"
-                                    className="form-control"
-                                    value={this.syn2}
-                                    onChange={this.handleInputChange} />
-                            </div>
-                        </div>
-                        <div className="col-sm-6">
-                            <div className="input-group mb-3">
-                                <div className="input-group-prepend">
-                                    <span className="input-group-text" id="inputGroup-sizing-default">Noun: </span>
-                                </div>
-                                <input
-                                    type="text"
-                                    name="noun3"
-                                    className="form-control"
-                                    value={this.noun3}
-                                    onChange={this.handleInputChange} />
-
-                            </div>
-                        </div>
-                        <div className="col-sm-6">
-                            <div className="input-group mb-3">
-                                <div className="input-group-prepend">
-                                    <span className="input-group-text" id="inputGroup-sizing-default">Synonym: </span>
-                                </div>
-                                <input
-                                    type="text"
-                                    name="syn3"
-                                    className="form-control"
-                                    value={this.syn3}
-                                    onChange={this.handleInputChange} />
-
-                            </div>
-                        </div>
+            <div className="row">
+                <div className="col-sm-12 card card-3">
+                    <br />
+                    <div class="alert alert-primary" role="alert">
+                        Please input the 'Nouns' and 'Synonyms', once you're done click "Next".
                     </div>
-                </form>
-                <hr />
-                <GeneratedStory noun1={this.state.noun1} syn1={this.state.syn1} noun2={this.state.noun2} syn2={this.state.syn2} noun3={this.state.noun3} syn3={this.state.syn3} />
-                <h1 />
-                <button type="button" className="btn btn-dark" onClick={this.gsVisable} > Next</button>
-                <h1 />
+                    <br />
+                    <form>
+                        <div className="row">
+                            <div className="col-sm-6">
+                                <div className="input-group mb-3">
+                                    <div className="input-group-prepend">
+                                        <span className="input-group-text" id="inputGroup-sizing-default">Noun: </span>
+                                    </div>
+                                    <input
+                                        type="text"
+                                        name="noun1"
+                                        className="form-control"
+                                        value={this.noun1}
+                                        onChange={this.handleInputChange} />
+
+                                </div>
+                            </div>
+                            <div className="col-sm-6">
+                                <div className="input-group mb-3">
+                                    <div className="input-group-prepend">
+                                        <span className="input-group-text" id="inputGroup-sizing-default">Synonym: </span>
+                                    </div>
+                                    <input
+                                        type="text"
+                                        name="syn1"
+                                        className="form-control"
+                                        value={this.syn1}
+                                        onChange={this.handleInputChange} />
+                                </div>
+                            </div>
+                            <div className="col-sm-6">
+                                <div className="input-group mb-3">
+                                    <div className="input-group-prepend">
+                                        <span className="input-group-text" id="inputGroup-sizing-default">Noun: </span>
+                                    </div>
+                                    <input
+                                        type="text"
+                                        name="noun2"
+                                        className="form-control"
+                                        value={this.noun2}
+                                        onChange={this.handleInputChange} />
+
+                                </div>
+                            </div>
+                            <div className="col-sm-6">
+                                <div className="input-group mb-3">
+                                    <div className="input-group-prepend">
+                                        <span className="input-group-text" id="inputGroup-sizing-default">Synonym: </span>
+                                    </div>
+                                    <input
+                                        type="text"
+                                        name="syn2"
+                                        className="form-control"
+                                        value={this.syn2}
+                                        onChange={this.handleInputChange} />
+                                </div>
+                            </div>
+                            <div className="col-sm-6">
+                                <div className="input-group mb-3">
+                                    <div className="input-group-prepend">
+                                        <span className="input-group-text" id="inputGroup-sizing-default">Noun: </span>
+                                    </div>
+                                    <input
+                                        type="text"
+                                        name="noun3"
+                                        className="form-control"
+                                        value={this.noun3}
+                                        onChange={this.handleInputChange} />
+
+                                </div>
+                            </div>
+                            <div className="col-sm-6">
+                                <div className="input-group mb-3">
+                                    <div className="input-group-prepend">
+                                        <span className="input-group-text" id="inputGroup-sizing-default">Synonym: </span>
+                                    </div>
+                                    <input
+                                        type="text"
+                                        name="syn3"
+                                        className="form-control"
+                                        value={this.syn3}
+                                        onChange={this.handleInputChange} />
+
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <hr />
+                    <GeneratedStory noun1={this.state.noun1} syn1={this.state.syn1} noun2={this.state.noun2} syn2={this.state.syn2} noun3={this.state.noun3} syn3={this.state.syn3} />
+                    <h1 />
+                    <button type="button" className="btn btn-dark" onClick={this.gsVisable} > Next</button>
+                    <h1 />
+                </div>
             </div>
 
         )
 
     }
 }
+
