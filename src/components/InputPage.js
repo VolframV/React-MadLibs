@@ -52,6 +52,7 @@ export default class InputPage extends Component {
                         Please input the 'Nouns' and 'Synonyms', once you're done click "Next".
                     </div>
                     <br />
+                    <h1>{this.props.storyName}</h1>
                     <form>
                         <div className="row">
                             <div className="col-sm-6">
