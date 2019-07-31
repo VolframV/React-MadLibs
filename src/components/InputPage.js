@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import GeneratedStory from './GeneratedStory';
+import Stories from './Stories';
 
 
 /// BREAK THIS INTO MORE COMPONETS 
@@ -140,7 +140,7 @@ export default class InputPage extends Component {
                         </div>
                     </form>
                     <hr />
-                    <GeneratedStory noun1={this.state.noun1} syn1={this.state.syn1} noun2={this.state.noun2} syn2={this.state.syn2} noun3={this.state.noun3} syn3={this.state.syn3} />
+                     <Stories storyName={this.props.storyName} noun1={this.state.noun1} syn1={this.state.syn1} noun2={this.state.noun2} syn2={this.state.syn2} noun3={this.state.noun3} syn3={this.state.syn3} />
                     <h1 />
                     <button type="button" className="btn btn-dark" onClick={this.gsVisable} > Next</button>
                     <h1 />

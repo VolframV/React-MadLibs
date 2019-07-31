@@ -3,11 +3,10 @@ import bnrimg1 from '../img/img6.jpg'
 import InputPage from './InputPage';
 
 // START CREATING SKELETONS FOR DATABASE
-// Main > NavBar > Stories > Story > InputPage > GeneratedStory
 // Stories: Data file storing only the Arrays and Vars of different stories
 // Story: Takes the params passed from Stories and Formats it into HTML and send it to InputPage
 
-// ALTERNATIVE: Main> NavBar > InputPage > Stories > Story > GeneratedStory
+// Main> NavBar > InputPage > Stories > Story
 
 
 export default class Main extends Component {
@@ -16,7 +15,7 @@ export default class Main extends Component {
         return (
             <div className="container">
                 <Banner />
-                <NavBar stories={['Comedy', 'Fairy Tale', 'Fantasy', 'SciFy']} />
+                <NavBar stories={['Comedy', 'Fairy Tale', 'Fantasy', 'SciFi']} />
             </div>
         )
     }
@@ -57,7 +56,7 @@ class NavBar extends Component {
         }));
         
     }
-
+    //////////////////////////////////////////// ADD FORM VALIDATION TO PREVENT SUBMITING BLANKS 
     render() {
         return (
             <div>
