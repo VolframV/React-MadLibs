@@ -37,10 +37,36 @@ export default class InputPage extends Component {
     }
 
     gsVisable() {
-        var str1Dom = document.getElementById('str1');
-        str1Dom.style.display = 'block';
-    }
 
+        var n1 = document.getElementById("noun1");
+        var n2 = document.getElementById("noun2");
+        var aj1 = document.getElementById("adj1");
+        var aj2 = document.getElementById("adj2");
+        var nam1 = document.getElementById("name1");
+        var numb1 = document.getElementById("num1");
+
+        if(n1.value == '') n1.style.cssText = " border: 1px solid red";
+        else n1.style.cssText = "";
+        if(n2.value == '') n2.style.cssText = " border: 1px solid red";
+        else n2.style.cssText = "";
+        if(aj1.value == '') aj1.style.cssText = "border: 1px solid red";
+        else aj1.style.cssText = "";        
+        if(aj2.value == '') aj2.style.cssText = " border: 1px solid red";
+        else aj2.style.cssText = "";      
+        if(nam1.value == '')nam1.style.cssText = "border: 1px solid red";
+        else nam1.style.cssText = "";              
+        if(numb1.value == '')numb1.style.cssText = " border: 1px solid red";
+        else numb1.style.cssText = "";      
+        
+        if (n1.value != '' && n2.value != '' && aj1.value != '' && aj2.value != '' && nam1.value != '' && numb1.value != ''){
+            document.getElementById('str1').style.display = 'block';
+            document.getElementById('anouncer').style.display = 'none';
+            }
+            else{
+                document.getElementById('anouncer').innerHTML= "Please Fill In The Missing Boxes.";
+                document.getElementById('anouncer').className = "alert alert-danger";
+            }
+    }
 
     render() {
         var storyName = this.props.storyName;
@@ -48,7 +74,7 @@ export default class InputPage extends Component {
             <div className="row">
                 <div className="col-sm-12 card card-3">
                     <br />
-                    <div class="alert alert-primary" role="alert">
+                    <div class="alert alert-primary" id="anouncer" role="alert">
                         Please input your answers', once you're done click "Next".
                     </div>
                     <br />
@@ -63,6 +89,7 @@ export default class InputPage extends Component {
                                     <input
                                         type="text"
                                         name="noun1"
+                                        id="noun1"
                                         className="form-control"
                                         value={this.noun1}
                                         onChange={this.handleInputChange} />
@@ -77,6 +104,7 @@ export default class InputPage extends Component {
                                     <input
                                         type="text"
                                         name="adj1"
+                                        id="adj1"
                                         className="form-control"
                                         value={this.adj1}
                                         onChange={this.handleInputChange} />
@@ -90,6 +118,7 @@ export default class InputPage extends Component {
                                     <input
                                         type="text"
                                         name="noun2"
+                                        id="noun2"
                                         className="form-control"
                                         value={this.noun2}
                                         onChange={this.handleInputChange} />
@@ -104,6 +133,7 @@ export default class InputPage extends Component {
                                     <input
                                         type="text"
                                         name="adj2"
+                                        id="adj2"
                                         className="form-control"
                                         value={this.adj2}
                                         onChange={this.handleInputChange} />
@@ -117,6 +147,7 @@ export default class InputPage extends Component {
                                     <input
                                         type="text"
                                         name="name1"
+                                        id="name1"
                                         className="form-control"
                                         value={this.name1}
                                         onChange={this.handleInputChange} />
@@ -129,8 +160,9 @@ export default class InputPage extends Component {
                                         <span className="input-group-text" id="inputGroup-sizing-default">Number: </span>
                                     </div>
                                     <input
-                                        type="text"
+                                        type="number"
                                         name="num1"
+                                        id="num1"
                                         className="form-control"
                                         value={this.num1}
                                         onChange={this.handleInputChange} />

@@ -20,9 +20,10 @@ export default class Stories extends Component {
         '+ this.props.noun1 + ' never trully stopped him but instead made his \
         '+ this.props.num1 + ' behaviour even stronger!  ';
         ///////////////////////////////////////////////////////////////////////////////
-        var fairyTale = 'Once Uppon A Time there was a prince name Will, he loved his '+this.props.noun1+' \
-        becuase it was '+this.props.adj1+'. \
-        However there was an evil wizzard who dispised Will for his famous '+this.props.adj1 +' '+this.props.noun1+ '.';
+        var fairyTale = 'Once Uppon A Time there was a Kingdom Far Far Away. It was a wonderful place that had alot of '+this.props.noun2+'s made from chocolate.\
+        Rivers were '+this.props.adj1+' and flowed all around the kingdom. There also lived a wizzard whose name was '+this.props.name1+', it was a strange name for\
+         a wizzard, but he was a strange wizzard. '+this.props.name1+' had a magical '+this.props.noun1+', it was impressive and above all else it was '+this.props.adj2+'.\
+        Everyone knew the wizzard lived '+this.props.num1+' floors above the library in the castle, but no one has ever seen him there.';
         ///////////////////////////////////////////////////////////////////////////////
         var fantasy = "The skies are flooded with flying "+this.props.noun1+'s, there apears to be no end to them and their evil. \
         All seemed hopeless untill the hero '+this.props.adj2+' '+this.props.name1+' arived to our village of Kreikee, that arival brought hope at a time when it was needed most.\
@@ -33,7 +34,7 @@ export default class Stories extends Component {
         No one could have foresaw that '+this.props.adj1 +' '+this.props.noun1+" would be the reason for our advancement into the next golden age. \
         Soon after that we paid the price, with the arival of Space "+this.props.noun2+'s and their desire to steal our '+this.props.adj1 +' '+this.props.noun1+', the blood \
         and horror that followed that war was only stopped thanks to ' +this.props.name1+'. 10 years after the conflict has started neither side saw an end, \
-        untill '+this.props.adj2+' '+this.props.name1+' saw the only sollution and destoryed the ' +this.props.adj1 +' '+this.props.noun1+ ' before \
+        untill '+this.props.adj2+' '+this.props.name1+' saw the only solution and destoryed the ' +this.props.adj1 +' '+this.props.noun1+ ' before \
         it could bring the end to both sides.' ;
         ///////////////////////////////////////////////////////////////////////////////
  

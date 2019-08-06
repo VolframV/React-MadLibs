@@ -56,7 +56,6 @@ class NavBar extends Component {
         }));
         
     }
-    //////////////////////////////////////////// ADD FORM VALIDATION TO PREVENT SUBMITING BLANKS 
     render() {
         return (
             <div>
@@ -74,24 +73,23 @@ class NavBar extends Component {
                                     name={this.props.stories[0]}
                                     href="">
                                     {this.props.stories[0]}
-                                    <span class="sr-only">(current)</span></a>
+                                    <span class="sr-only"></span></a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item active">
                                     <a class="nav-link"
                                     onClick={this.handleNavClick} 
                                     name={this.props.stories[1]}
                                      href="#">
                                      {this.props.stories[1]}</a>
                                 </li>
-                                <a class="navbar-brand"
-                                 href="#">STORIES</a>
-                                <li class="nav-item">
+                  
+                                <li class="nav-item active">
                                     <a class="nav-link" 
                                     onClick={this.handleNavClick} 
                                     name={this.props.stories[2]}
                                     href="#">{this.props.stories[2]}</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item active">
                                     <a class="nav-link" 
                                     onClick={this.handleNavClick} 
                                     name={this.props.stories[3]}
